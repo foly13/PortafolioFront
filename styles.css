@@ -1,0 +1,349 @@
+/*Estilos para el sobre mi*/
+
+body {
+    /*background-image: url('images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-color: #080808;
+    color: white;
+    font-family: Rajdhani;
+    display: flex;
+    flex-direction: column;
+    /* Coloca los elementos en columna */
+    min-height: 100vh;
+}
+
+/*Uso de z-index*/
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 10;
+}
+
+.seccionCentral {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.parrafoHome {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.ContainerFoto {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ContainerFoto>img {
+    padding-top: 3em;
+    width: 12%;
+    height: 12%;
+}
+
+
+/*Estilos lista de redes*/
+.ContainerList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25%;
+
+}
+
+#menuRedes {
+    margin-top: 15px;
+}
+
+.itemRedes {
+    padding-top: 2%;
+    justify-content: center;
+}
+
+.itemRedes a {
+    padding-top: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+
+}
+
+.itemRedes a:hover {
+    color: darkgray;
+    transform: scale(2);
+}
+
+.itemRedes a:active {
+    color: royalblue;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+}
+
+/*Estilos para lista de menu de navegacion*/
+.containerMenu {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    list-style: none;
+}
+
+.itemMenu {
+    padding: auto;
+}
+
+/*Uso combinador directo*/
+.itemMenu>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+
+}
+
+.itemMenu a:hover {
+    color: darkgray;
+    transform: scale(1.5);
+}
+
+
+.itemMenu a:active {
+    color: royalblue;
+    text-decoration: underline;
+}
+
+footer {
+
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente para el footer */
+    padding: 20px 0;
+    /* Espaciado interno */
+}
+
+/*Estilos de la tabla de habilidades*/
+table {
+    width: 80%;
+    min-height: 300px;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: 'Rajdhani', sans-serif;
+
+
+}
+
+#containerTabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #000; 
+}
+
+/* Estilo para el encabezado */
+th {
+    background-color: #e1ded9;
+}
+
+/* Filas pares */
+tr:nth-child(even) {
+    background-color: #e1ded9;
+}
+
+/* Filas impares */
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+td:hover {
+    background-color: #87888b;
+}
+
+/*Estilos formulario de contacto*/
+#seccionFormulario {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+}
+
+.labelform {
+    margin-bottom: 7px;
+    font-size: 1em;
+}
+
+.inputform {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 1.5em;
+}
+
+#botonForm {
+    align-self: center;
+    margin-top: 8px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 6px;
+    height: 2em;
+    width: 10em;
+    margin-bottom: 2em;
+}
+
+#botonForm:hover {
+    background-color: #153ea2;
+    transform: scale(1.5);
+}
+
+#botonForm i {
+    margin-left: 8px;
+}
+
+
+/*estilos pagina en construccion*/
+#imgProjects {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+}
+
+#imagenProjectsConteiner {
+    width: 100%;
+    text-align: center;
+}
+
+/*Responsive*/
+@media (max-width: 1080px) {
+
+    /* Estilos para tablet horizontal */
+    header {
+        font-size: 1.8em;
+    }
+
+    .ContainerFoto img {
+        width: 15%;
+    }
+
+    .parrafoHome {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Estilos para tablet vertical */
+    header {
+        font-size: 1em;
+    }
+
+    .ContainerFoto img {
+        width: 30%;
+    }
+
+    #imgPerfil {
+        width: 30%;
+
+    }
+
+    .parrafoHome {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .containerMenu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .ContainerList {
+        padding: 0;
+    }
+
+    footer {
+        padding: 0%;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Estilos para móvil 1 */
+    header {
+        font-size: 0.8em;
+    }
+
+    .ContainerFoto img {
+        width: 25%;
+    }
+
+
+    .parrafoHome {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Apilar los ítems del menú */
+    .containerMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemMenu {
+        font-size: 1em;
+    }
+
+    .seccionCentral {
+        height: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Estilos para móvil 2 */
+    header {
+        font-size: 0.6em;
+    }
+
+    .ContainerFoto img {
+        width: 40%;
+    }
+    .parrafoHome {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    form {
+        width: 100%;
+
+    }
+}
