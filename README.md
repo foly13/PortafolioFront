@@ -12,4 +12,4 @@ Profe, intenté seguir de la mejor manera posible las consignas de la PFO. Esper
 - `styles.css`: Hoja de estilos para todos los documentos.
 - `images/`: Carpeta que contiene las imágenes del proyecto.
  ## Imagen de Portafolio
-![Mi Portafolio](assets/images/ultimaCaptura.jpg "Portafolio")
+![Mi Portafolio](./assets/images/ultimaCaptura.jpg "Portafolio")
